@@ -1,3 +1,5 @@
+![discord-wow_register](https://cdn.discordapp.com/attachments/617809275854651508/751404990383259688/unknown.png)
+
 # Discord Wow Register
 
 Discord Wow Register is a bot that allows you to create an account directly from Discord.
