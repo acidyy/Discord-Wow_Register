@@ -18,6 +18,10 @@ Emulators compatible :
   
 Made with ❤ and [Lua](http://www.lua.org/), [Discordia](https://github.com/SinisterRectus/Discordia), [Luvit](https://luvit.io).
 
+## Support me
+
+You can support all my projects by making a [donation with PayPal](https://www.paypal.me/LevelLouis).
+
 ## How to install it?
 
 To start you need to install Lua:
