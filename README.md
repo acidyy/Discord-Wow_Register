@@ -21,6 +21,7 @@
   - ```git clone https://github.com/iThorgrim-Hub/Discord-Wow_Register.git```
   
 - Edit config Files
+  - ``nano Discord-Wow_Register.conf```
 
 - Launch Bot
   - ```./../luvit Discord-Wow_Register.lua```
