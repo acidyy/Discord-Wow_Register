@@ -1,6 +1,6 @@
 # Discord-Wow_Register
 
-## How to install ?
+## How to install?
 
 - Install lua on your Linux system:
   - ```apt install lua5.1```
@@ -26,6 +26,6 @@
 - Launch Bot
   - ```./../luvit Discord-Wow_Register.lua```
 
-## How it's work ?
+## How does it work ?
 
-One player send `!account create` command and bot whispers player for more informations.
+One player sends `!account create` command and the bot whispers to the player for more information.
