@@ -13,8 +13,8 @@ Discord Wow Register works with :
   - Ubuntu 18.04
 
 Emulators compatible : 
-  - AzerothCore
-  - TrinityCore
+  - [AzerothCore](https://www.azerothcore.org/)
+  - [TrinityCore](https://www.trinitycore.org/)
   
 Made with ❤ and [Lua](http://www.lua.org/), [Discordia](https://github.com/SinisterRectus/Discordia), [Luvit](https://luvit.io).
 
