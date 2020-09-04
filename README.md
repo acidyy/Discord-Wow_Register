@@ -20,15 +20,19 @@ We are going to install luarocks in order to fill in some dependencies :    
 
 Let us continue by installing the so-called dependencies:  
 > `luarock install luasql-mysql MYSQL_INCDIR=/usr/include/mysql/`
+>
 > `luarock install sha1`
 
 We also need to install Luvit, to do this we will create a new folder : 
 > `mkdir Luvit`
+>
 > `cd Luvit`
+>
 > `curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh`
 
 Once this is done, we need to create a folder for our Bot, we create it in the Luvit folder : 
 > `mkdir Discord-Wow_Register`
+>
 > `cd Discord-Wow_Register`
 
 Now that we are in our bot folder, we need to download Discordia : 
