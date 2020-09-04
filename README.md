@@ -8,8 +8,8 @@
 - Install luarocks
   - ```apt install luarocks```
   
-- Install luasql-mysql (for Mariadb & MySQL)
-  - ```luarock install luasql-mysql MYSQL_INCDIR=/usr/include/mysql/```
+- Install luasql-mysql (for Mariadb & MySQL) & Sha1
+  - ```luarock install luasql-mysql MYSQL_INCDIR=/usr/include/mysql/ && luarock install sha1```
   
 - Create a new folder for Luvit - > Install luvit
   - ```mkdir luvit && cd luvit && curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh```
