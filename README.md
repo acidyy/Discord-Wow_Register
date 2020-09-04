@@ -36,42 +36,54 @@ We are going to install luarocks in order to fill in some dependencies :    
 ```
 ![luarocks](https://cdn.discordapp.com/attachments/751431092233437264/751471976853274784/unknown.png)
 
-
 Let us continue by installing the so-called dependencies:  
 ```
-> luarock install luasql-mysql MYSQL_INCDIR=/usr/include/mysql/
-> luarock install sha1
+> sudo luarocks install luasql-mysql MYSQL_INCDIR=/usr/include/mysql/
+> sudo luarocks install sha1
 ```
-!(luarocks install)[]
-
+!(luarocks install luasql-mysql)[https://cdn.discordapp.com/attachments/751431092233437264/751474590567366767/unknown.png]
+!(luarocks install sha1)[https://cdn.discordapp.com/attachments/751431092233437264/751474745886769232/unknown.png]
 
 We also need to install Luvit, to do this we will create a new folder : 
-> `mkdir Luvit`
-> `cd Luvit`
-> `curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh`
-
+```
+> mkdir Luvit
+> cd Luvit
+> curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh
+```
+!(luvit)[https://cdn.discordapp.com/attachments/751431092233437264/751474958345043988/unknown.png]
 
 Once this is done, we need to create a folder for our Bot, we create it in the Luvit folder : 
-> `mkdir Discord-Wow_Register`
->
-> `cd Discord-Wow_Register`
-
+```
+> mkdir Discord-Wow_Register
+> cd Discord-Wow_Register
+```
+!(Discord-Wow_Register)[https://cdn.discordapp.com/attachments/751431092233437264/751475219402719372/unknown.png]
 
 Now that we are in our bot folder, we need to download Discordia : 
-> `./../lit install SinisterRectus/discordia`
+```
+> ./../lit install SinisterRectus/discordia
+```
+!(Discordia)[https://cdn.discordapp.com/attachments/751431092233437264/751475594365108324/unknown.png]
 
 
 We also need to get our Super Bot back! 
-> `git clone https://github.com/iThorgrim-Hub/Discord-Wow_Register.git`
+```
+> git clone https://github.com/iThorgrim-Hub/Discord-Wow_Register.git
+```
+!(git clone)[https://media.discordapp.net/attachments/751431092233437264/751475713688862830/unknown.png]
 
 
 Now that the bot is in our possession we will configure it (**It is important to add the token of a Discord bot [see here](https://discordpy.readthedocs.io/en/latest/discord.html))** : 
-> `nano Discord-Wow_RegisterConf.lua`
+```
+> nano Discord-Wow_RegisterConf.lua
+```
 
 
 The configuration is complete, we can now launch the bot : 
-> `./../luvit Discord-Wow_Register.lua`
-
+```
+> sudo .././luvit Discord-Wow_Register.lua
+```
+!(launch)[https://cdn.discordapp.com/attachments/751431092233437264/751476124382527609/unknown.png]
 
 
 ## How does it work?
