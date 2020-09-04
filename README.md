@@ -4,10 +4,14 @@ Discord Wow Register is a bot that allows you to create an account directly from
 It uses several free technologies such as: Discordia, Luvit, Luarocks, LuaSQL, SHA1.
 
 Discord Wow Register works with :
-    - Debian 9
-    - Debian 10
-    - Ubuntu 16.04
-    - Ubuntu 18.04
+  - Debian 9
+  - Debian 10
+  - Ubuntu 16.04
+  - Ubuntu 18.04
+
+Emulators compatible : 
+  - AzerothCore
+  - TrinityCore
 
 ## How to install it?
 
