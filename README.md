@@ -60,7 +60,7 @@ We also need to get our Super Bot back!
 > `git clone https://github.com/iThorgrim-Hub/Discord-Wow_Register.git`
 
 
-Now that the bot is in our possession we will configure it (**It is important to add the token of a Discord bot [[See here](https://discordpy.readthedocs.io/en/latest/discord.html)]**) : 
+Now that the bot is in our possession we will configure it (**It is important to add the token of a Discord bot [See here](https://discordpy.readthedocs.io/en/latest/discord.html))** : 
 > `nano Discord-Wow_RegisterConf.lua`
 
 
