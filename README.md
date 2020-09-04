@@ -25,3 +25,7 @@
 
 - Launch Bot
   - ```./../luvit Discord-Wow_Register.lua```
+
+## How it's work ?
+
+One player send `!account create` command and bot whispers player for more informations.
