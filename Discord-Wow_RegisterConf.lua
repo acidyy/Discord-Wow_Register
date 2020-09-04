@@ -23,7 +23,7 @@ local botConf = {
     ['color'] = '0, 255, 0',
   },
 
-  ['botToken'] = 'NzUxNDA2MzAwNzU1MTMyNTQ4.X1Inpg.GIL34a7GbB6X1Xl1AhKtP5LK8Ww',
+  ['botToken'] = 'YOUR TOKEN HERE',
 };
 
 return botConf;
