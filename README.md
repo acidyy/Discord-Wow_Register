@@ -13,6 +13,8 @@ Discord Wow Register works with :
 Emulators compatible : 
   - AzerothCore
   - TrinityCore
+  
+Made with ❤ and [Lua](http://www.lua.org/), [Discordia](https://github.com/SinisterRectus/Discordia), [Luvit](https://luvit.io).
 
 ## How to install it?
 
