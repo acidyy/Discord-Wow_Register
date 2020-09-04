@@ -28,32 +28,26 @@ To start you need to install Lua:
 ```
 > sudo apt install lua5.1
 ```
-![lua5.1](https://cdn.discordapp.com/attachments/751431092233437264/751467760202154155/unknown.png)
+![lua5.1](https://cdn.discordapp.com/attachments/751431092233437264/751471800742838464/unknown.png)
 
-Debian 9 / 10 : We are going to install luarocks in order to fill in some dependencies :    
+We are going to install luarocks in order to fill in some dependencies :    
 ```
 > sudo apt install luarocks
 ```
-
-Ubuntu 16.04 / 18.04 : We are going to install luarocks in order to fill in some dependencies :    
-```
-> wget https://luarocks.org/releases/luarocks-3.3.1.tar.gz
-> tar zxpf luarocks-3.3.1.tar.gz
-> cd luarocks-3.3.1
-```
+![luarocks](https://cdn.discordapp.com/attachments/751431092233437264/751471976853274784/unknown.png)
 
 
 Let us continue by installing the so-called dependencies:  
-> `luarock install luasql-mysql MYSQL_INCDIR=/usr/include/mysql/`
->
-> `luarock install sha1`
+```
+> luarock install luasql-mysql MYSQL_INCDIR=/usr/include/mysql/
+> luarock install sha1
+```
+!(luarocks install)[]
 
 
 We also need to install Luvit, to do this we will create a new folder : 
 > `mkdir Luvit`
->
 > `cd Luvit`
->
 > `curl -L https://github.com/luvit/lit/raw/master/get-lit.sh | sh`
 
 
