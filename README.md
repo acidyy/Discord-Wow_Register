@@ -25,11 +25,22 @@ You can support all my projects by making a [donation with PayPal](https://www.p
 ## How to install it?
 
 To start you need to install Lua:
-  > `sudo apt install lua5.1`
+```
+> sudo apt install lua5.1
+```
+![lua5.1](https://cdn.discordapp.com/attachments/751431092233437264/751467760202154155/unknown.png)
 
+Debian 9 / 10 : We are going to install luarocks in order to fill in some dependencies :    
+```
+> sudo apt install luarocks
+```
 
-We are going to install luarocks in order to fill in some dependencies :    
-> `sudo apt install luarocks`
+Ubuntu 16.04 / 18.04 : We are going to install luarocks in order to fill in some dependencies :    
+```
+> wget https://luarocks.org/releases/luarocks-3.3.1.tar.gz
+> tar zxpf luarocks-3.3.1.tar.gz
+> cd luarocks-3.3.1
+```
 
 
 Let us continue by installing the so-called dependencies:  
@@ -60,7 +71,7 @@ We also need to get our Super Bot back!
 > `git clone https://github.com/iThorgrim-Hub/Discord-Wow_Register.git`
 
 
-Now that the bot is in our possession we will configure it (**It is important to add the token of a Discord bot [See here](https://discordpy.readthedocs.io/en/latest/discord.html))** : 
+Now that the bot is in our possession we will configure it (**It is important to add the token of a Discord bot [see here](https://discordpy.readthedocs.io/en/latest/discord.html))** : 
 > `nano Discord-Wow_RegisterConf.lua`
 
 
