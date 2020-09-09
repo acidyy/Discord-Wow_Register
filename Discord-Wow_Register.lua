@@ -54,7 +54,8 @@
         if (message.content == '!account create')then
           wowBot.setUserTable(message.author.tag, false);
           users[message.author.tag].step = 'createAccount';
-
+          message:delete();
+        
           message.author:send {
               embed = {
                   title = botConf['header'],
