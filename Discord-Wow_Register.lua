@@ -37,7 +37,7 @@
         };
       end
 
-      return Users[id];
+      return users[id];
     end
 
 --[[
@@ -60,7 +60,7 @@
                   title = botConf['header'],
                   description = botConf['body'],
                   thumbnail = {url = botConf['img']},
-                  color = discordia.Color.fromRGB(botConf['color']).value;
+                  color = discordia.Color.fromRGB(114, 137, 218).value;
               };
           };
         end
@@ -87,7 +87,7 @@
                     title = botConf['success']['header'],
                     description = botConf['success']['body'],
                     thumbnail = {url = botConf['success']['img']},
-                    color = discordia.Color.fromRGB(botConf['success']['color']).value;
+                    color = discordia.Color.fromRGB(0, 255, 0).value;
                 };
             };
           else
@@ -96,7 +96,7 @@
                     title = botConf['failed']['header'],
                     description = botConf['failed']['body'],
                     thumbnail = {url = botConf['failed']['img']},
-                    color = discordia.Color.fromRGB(botConf['failed']['color']).value;
+                    color = discordia.Color.fromRGB(255, 0, 0).value;
                 };
             };
           end
