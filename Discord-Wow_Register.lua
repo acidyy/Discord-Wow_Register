@@ -55,7 +55,7 @@
           wowBot.setUserTable(message.author.tag, false);
           users[message.author.tag].step = 'createAccount';
 
-          author:send {
+          message.author:send {
               embed = {
                   title = botConf['header'],
                   description = botConf['body'],
@@ -75,32 +75,43 @@
           for i in string.gmatch(content, "%S+") do
             users[message.author.tag][#users[message.author.tag]+1] = i;
           end
-
-          -- Custom local
-          local getUsername = assert(mysqlClient:execute('SELECT id FROM account WHERE username ="'..users[message.author.tag][1]..'"'));
-          local row = getUsername:fetch({}, "a");
-
-          if(not(row)) then
-            mysqlClient:execute('INSERT INTO account SET username ="'..users[message.author.tag][1]..'", sha_pass_hash = "'..sha1(string.upper(users[message.author.tag][1])..':'..string.upper(users[message.author.tag][2]))..'"');
+          
+          if(not(users[message.author.tag][2]))then
             message.author:send {
                 embed = {
-                    title = botConf['success']['header'],
-                    description = botConf['success']['body'],
-                    thumbnail = {url = botConf['success']['img']},
-                    color = discordia.Color.fromRGB(0, 255, 0).value;
-                };
-            };
-          else
-            message.author:send {
-                embed = {
-                    title = botConf['failed']['header'],
-                    description = botConf['failed']['body'],
+                    title = botConf['failed']['header'][2],
+                    description = botConf['success']['body'][2],
                     thumbnail = {url = botConf['failed']['img']},
                     color = discordia.Color.fromRGB(255, 0, 0).value;
                 };
             };
+          else
+            -- Custom local
+            local getUsername = assert(mysqlClient:execute('SELECT id FROM account WHERE username ="'..users[message.author.tag][1]..'"'));
+            local row = getUsername:fetch({}, "a");
+
+            if(not(row)) then
+              mysqlClient:execute('INSERT INTO account SET username ="'..users[message.author.tag][1]..'", sha_pass_hash = "'..sha1(string.upper(users[message.author.tag][1])..':'..string.upper(users[message.author.tag][2]))..'"');
+              message.author:send {
+                  embed = {
+                      title = botConf['success']['header'],
+                      description = botConf['success']['body'],
+                      thumbnail = {url = botConf['success']['img']},
+                      color = discordia.Color.fromRGB(0, 255, 0).value;
+                  };
+              };
+            else
+              message.author:send {
+                  embed = {
+                      title = botConf['failed']['header'][1],
+                      description = botConf['failed']['body'][1],
+                      thumbnail = {url = botConf['failed']['img']},
+                      color = discordia.Color.fromRGB(255, 0, 0).value;
+                  };
+              };
+            end
+            users[message.author.tag] = nil;
           end
-          users[message.author.tag] = nil;
         end
       end
 
