@@ -111,6 +111,7 @@
                   };
               };
             end
+            getUsername:close();
             users[message.author.tag] = nil;
           end
         end
